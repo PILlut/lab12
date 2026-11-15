@@ -52,6 +52,8 @@ Calculate(float Numeral, char Operation[4])
         return(cos(Numeral));
     else if (strncmp(Operation, "tan", 3) == 0)
         return(tan(Numeral));
+	else if (strncmp(Operation, "abs", 3) == 0)
+		return(fabs(Numeral));
     else
     {
         printf("Неправильно введено действие ");
